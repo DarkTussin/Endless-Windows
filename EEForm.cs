@@ -53,7 +53,6 @@ namespace EndlessWindowz
 
         private void startThread()
         {
-            //stoppy.Start();
             new Thread(new ThreadStart(() =>
             {
                 while(alive)
