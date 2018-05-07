@@ -76,19 +76,6 @@ namespace EndlessWindowz
                         0, 0,
                         scImg.Size,
                         CopyPixelOperation.SourceCopy);
-                    /*scCalls++;
-                    if (stoppy.ElapsedMilliseconds >= 1000)
-                    {
-                        stoppy.Restart();
-                        lastCalls = scCalls;
-                        drawCalls();
-                        scCalls = 0;
-                    }
-                    else
-                    {
-                        drawCalls();
-                    }*/
-                    //pbImg = scImg;
                     pictureBox1.Image = scImg;
                 }
                 catch { /* Throw away error in case desktop is locked */ }
@@ -122,11 +109,6 @@ namespace EndlessWindowz
                     this.FormBorderStyle = FormBorderStyle.None;
                 else
                     this.FormBorderStyle = FormBorderStyle.Sizable;
-            /*if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }*/
         }
 
         private void pictureBox1_DoubleClick(object sender, EventArgs e)
